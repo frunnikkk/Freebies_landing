@@ -1,9 +1,52 @@
 /*- General -*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body{
     margin: 0 auto;
     padding: 0;
     background-color: white;
-    width: 1440px;
     font-family: 'Rubik';
     display: flex;
     flex-direction: column;
@@ -24,12 +67,13 @@ body{
 #header-section-nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #header-logo{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #logo{
@@ -88,7 +132,7 @@ body{
 #header-section-article{
     display: flex;
     justify-content: space-between;
-    margin-top: 110px;
+    margin-top: 130px;
 }
 
 #article{
@@ -107,6 +151,7 @@ body{
     line-height: 30px;
     font-weight: 400;
     white-space: pre;
+    margin-top: 20px;
 }
 
 #article > p:last-of-type span{
@@ -128,7 +173,7 @@ body{
     line-height: 25px;
     background-color: #F53838;
     border: none;
-    margin-top: 50px;
+    margin-top: 67px;
     box-shadow: 0 20px 50px -10px rgba(245, 56, 56, 0.35);
 }
 
